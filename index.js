@@ -5,8 +5,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const util = require('util');
 
 // TODO: Create an array of questions for user input
-// give options for different sections and then add them to 
-// the table of contents in generateMarkdown.js
 const questions = [{
   type: 'input',
   name: 'title',
@@ -160,7 +158,7 @@ const questions = [{
       return false;
     }
   }
-}]; //end of questions array
+}];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
